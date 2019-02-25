@@ -1,0 +1,13 @@
+
+input{
+    width: 200px !important;
+    margin: 0;
+}
+
+button{
+    margin: 2px !important;
+}
+
+.wrapper{
+    padding-top: 20px;
+}
