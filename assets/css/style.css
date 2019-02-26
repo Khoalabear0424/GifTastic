@@ -1,4 +1,21 @@
 
+body::after{
+    content: "";
+    position: fixed;
+    z-index: -1;   
+    width: 100%;
+    background-image: url('../img/dark-paths.png');
+    opacity: 1.0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+h1{
+    color: white;
+}
+
 input{
     width: 200px !important;
     margin: 0;
@@ -10,4 +27,12 @@ button{
 
 .wrapper{
     padding-top: 20px;
+}
+
+.gifImages{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 4px;
+    border: 1px darkolivegreen solid;
 }
