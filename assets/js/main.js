@@ -59,5 +59,3 @@ function gifState(){
         $(this).attr('data-gifAnimateState','false');
     }
 }
-
-$('h1').text('Gif-Tastic!')
