@@ -43,6 +43,7 @@ button{
     border-radius: 10px;
     margin: 4px;
     border: 1px darkolivegreen solid;
+    display: inline-block;
 }
 
 .gifImages:hover{
