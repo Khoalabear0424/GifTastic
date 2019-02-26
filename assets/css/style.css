@@ -18,11 +18,15 @@ h1{
 
 input{
     width: 200px !important;
-    margin: 0;
+    margin: auto;
 }
 
 button{
     margin: 2px !important;
+}
+
+#buttons{
+    margin-bottom: 20px;
 }
 
 .wrapper{
@@ -30,9 +34,17 @@ button{
 }
 
 .gifImages{
-    width: 250px;
+    width: 23%;
     height: auto;
     border-radius: 10px;
     margin: 4px;
     border: 1px darkolivegreen solid;
+}
+
+.gifImages:hover{
+    border: 1px yellow solid;
+}
+
+.form-control{
+    display: inline !important;
 }

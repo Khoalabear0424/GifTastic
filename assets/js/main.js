@@ -1,5 +1,5 @@
 
-const topicItems = ['Apples', 'Oranges', 'Pears', 'Peaches', 'Watermelon', 'Mangos']
+const topicItems = ['Apples', 'Oranges', 'Pears', 'Peaches', 'Watermelon', 'Mangos','Coconut']
 const idButtons = $('#buttons');
 const idAddButt = $('#addButt');
 const queryURL = "https://api.giphy.com/v1/gifs/search?api_key=mD36BJfT1Yf7RVO8Xqfm65rJgtck3eKI?q=cat";
@@ -59,3 +59,5 @@ function gifState(){
         $(this).attr('data-gifAnimateState','false');
     }
 }
+
+$('h1').text('Gif-Tastic!')
