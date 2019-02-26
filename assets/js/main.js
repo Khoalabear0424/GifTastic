@@ -28,7 +28,7 @@ idAddButt.click(function (event) {
 
 function searchGifApi() {
     let searchItem = $(this)[0].firstChild.data;
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+searchItem+"&api_key=mD36BJfT1Yf7RVO8Xqfm65rJgtck3eKI&limit=20");
+    var xhr = $.get("https://api.giphy.com/v1/gifs/search?q="+searchItem+"&api_key=mD36BJfT1Yf7RVO8Xqfm65rJgtck3eKI&limit=20");
     xhr.done(function (data) {
         console.log("success got data", data);
         for (let i = 0; i < data.data.length; i++) {
