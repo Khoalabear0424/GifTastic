@@ -46,7 +46,8 @@ crossorigin="anonymous"></script>
 crossorigin="anonymous"></script>
 
 <script>
-var bodyElement = document.querySelector("h1");
+// var bodyElement = document.querySelector("h1");
+var buttonColor = $('button');
  
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
@@ -59,7 +60,8 @@ function changeColor() {
     delay++;
      
     if (delay > 20) {
-        bodyElement.style.color = getRandomColor();
+        // bodyElement.style.color = getRandomColor();
+        buttonColor[0].style.backgroundColor = getRandomColor();
         delay = 0;
     }
  

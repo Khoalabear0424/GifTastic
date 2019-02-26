@@ -15,9 +15,9 @@ body::after{
 h1{
     color: white;
     font-size: 50px !important; 
-    box-shadow: 5px 5px 5px 5px;
+    /* box-shadow: 5px 5px 5px 5px; */
     border-radius: 10px;
-    margin-bottom: 20px !important;
+    margin-bottom: 5px !important;
 }
 
 input{
