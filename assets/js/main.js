@@ -8,7 +8,7 @@ for (let i = 0; i < topicItems.length; i++) {
     let $butt = $('<button/>',
         {
             text: topicItems[i],
-            class: 'btn btn-success',
+            class: 'btn btn-warning',
             click: searchGifApi,
         });
     idButtons.append($butt);
@@ -19,16 +19,15 @@ idAddButt.click(function (event) {
     let $butt = $('<button/>',
         {
             text: $('input').val().trim(),
-            class: 'btn btn-success',
+            class: 'btn btn-warning',
             click: searchGifApi,
         });
     idButtons.append($butt);
-    alert('Added new button!');
 });
 
 function searchGifApi() {
     let searchItem = $(this)[0].firstChild.data;
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+searchItem+"&api_key=mD36BJfT1Yf7RVO8Xqfm65rJgtck3eKI&limit=20");
+    var xhr = $.get("https://api.giphy.com/v1/gifs/search?q="+searchItem+"&api_key=mD36BJfT1Yf7RVO8Xqfm65rJgtck3eKI&limit=50");
     xhr.done(function (data) {
         console.log("success got data", data);
         for (let i = 0; i < data.data.length; i++) {
